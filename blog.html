@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>BICA Computer Centre Blog</title>
+
+  <meta name="description"
+        content="BICA Computer Centre-এর কম্পিউটার শিক্ষা, প্রযুক্তি, ক্যারিয়ার ও বিভিন্ন গুরুত্বপূর্ণ তথ্যের ব্লগ।">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, "Noto Sans Bengali", sans-serif;
+      background: #f5f7fb;
+      color: #222;
+      line-height: 1.7;
+    }
+
+    header {
+      background: #123c69;
+      color: white;
+      padding: 22px 15px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 28px;
+      margin-bottom: 5px;
+    }
+
+    header p {
+      font-size: 15px;
+      opacity: 0.9;
+    }
+
+    nav {
+      background: white;
+      padding: 12px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #123c69;
+      font-weight: bold;
+      margin: 0 10px;
+    }
+
+    nav a:hover {
+      color: #e67e22;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 30px auto;
+      padding: 0 15px;
+    }
+
+    .hero {
+      background: white;
+      padding: 30px 20px;
+      border-radius: 14px;
+      text-align: center;
+      margin-bottom: 30px;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.07);
+    }
+
+    .hero h2 {
+      color: #123c69;
+      margin-bottom: 10px;
+      font-size: 26px;
+    }
+
+    .hero p {
+      color: #555;
+    }
+
+    .section-title {
+      margin-bottom: 20px;
+      color: #123c69;
+    }
+
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .blog-card {
+      background: white;
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+      transition: 0.2s;
+    }
+
+    .blog-card:hover {
+      transform: translateY(-4px);
+    }
+
+    .blog-image {
+      width: 100%;
+      height: 180px;
+      background: linear-gradient(135deg, #123c69, #2b6ca3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 45px;
+    }
+
+    .blog-content {
+      padding: 20px;
+    }
+
+    .category {
+      display: inline-block;
+      background: #eaf2fb;
+      color: #123c69;
+      padding: 4px 10px;
+      border-radius: 20px;
+      font-size: 12px;
+      margin-bottom: 10px;
+    }
+
+    .blog-content h3 {
+      font-size: 20px;
+      margin-bottom: 8px;
+      color: #222;
+    }
+
+    .blog-content p {
+      color: #666;
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+
+    .read-more {
+      display: inline-block;
+      text-decoration: none;
+      background: #123c69;
+      color: white;
+      padding: 8px 15px;
+      border-radius: 7px;
+      font-size: 14px;
+    }
+
+    .read-more:hover {
+      background: #0d2d50;
+    }
+
+    footer {
+      margin-top: 50px;
+      background: #123c69;
+      color: white;
+      text-align: center;
+      padding: 25px 15px;
+    }
+
+    @media (max-width: 800px) {
+      .blog-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 550px) {
+      header h1 {
+        font-size: 23px;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 5px 7px;
+        font-size: 14px;
+      }
+
+      .blog-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero h2 {
+        font-size: 22px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>THE BICA COMPUTER CENTRE</h1>
+    <p>প্রযুক্তির সঙ্গে এগিয়ে চলুন</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="blog.html">Blog</a>
+  </nav>
+
+  <main class="container">
+
+    <section class="hero">
+      <h2>BICA Computer Centre Blog</h2>
+      <p>
+        কম্পিউটার শিক্ষা, প্রযুক্তি, ক্যারিয়ার এবং ডিজিটাল দক্ষতা
+        সম্পর্কে গুরুত্বপূর্ণ তথ্য পড়ুন।
+      </p>
+    </section>
+
+    <h2 class="section-title">সাম্প্রতিক ব্লগ</h2>
+
+    <section class="blog-grid">
+
+      <article class="blog-card">
+        <div class="blog-image">💻</div>
+
+        <div class="blog-content">
+          <span class="category">Computer Education</span>
+
+          <h3>কম্পিউটার শেখা কেন গুরুত্বপূর্ণ?</h3>
+
+          <p>
+            বর্তমান ডিজিটাল যুগে কম্পিউটার দক্ষতা কেন
+            শিক্ষার্থী ও চাকরিপ্রার্থীদের জন্য গুরুত্বপূর্ণ,
+            তা জেনে নিন।
+          </p>
+
+          <a class="read-more" href="blog-post-1.html">
+            বিস্তারিত পড়ুন →
+          </a>
+        </div>
+      </article>
+
+
+      <article class="blog-card">
+        <div class="blog-image">📚</div>
+
+        <div class="blog-content">
+          <span class="category">Learning</span>
+
+          <h3>কম্পিউটার শেখার শুরু কোথা থেকে?</h3>
+
+          <p>
+            একদম শুরু থেকে কম্পিউটার শেখার জন্য
+            কোন বিষয়গুলো আগে শেখা উচিত তার সহজ ধারণা।
+          </p>
+
+          <a class="read-more" href="blog-post-2.html">
+            বিস্তারিত পড়ুন →
+          </a>
+        </div>
+      </article>
+
+
+      <article class="blog-card">
+        <div class="blog-image">🚀</div>
+
+        <div class="blog-content">
+          <span class="category">Career</span>
+
+          <h3>Computer Skill এবং Career</h3>
+
+          <p>
+            বিভিন্ন কাজ ও ক্যারিয়ারে কম্পিউটার দক্ষতার
+            ভূমিকা সম্পর্কে জানুন।
+          </p>
+
+          <a class="read-more" href="#">
+            শীঘ্রই আসছে
+          </a>
+        </div>
+      </article>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 THE BICA COMPUTER CENTRE</p>
+    <p>Computer Education & Digital Skills</p>
+  </footer>
+
+</body>
+</html>
